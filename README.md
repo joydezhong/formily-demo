@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## formily尝鲜demo应用
 
-## Available Scripts
+### formily的几个概念
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+1、JOSN Schema描述
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2、表单的生命周期/状态
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+3、表单操作actions/effects
 
-### `yarn test`
+4、表单的路径系统
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5、x-linkages属性简单联动
 
-### `yarn build`
+6、表单的扩展机制（UI扩展，vertical扩展，effect扩展）
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- q: 切换就得清空(编辑下) 有组合切换到无组合的清空（编辑下）
 
-### `yarn eject`
+基本
+isUpdateAttribute
+getBasicFormParamsByEdit（brand、name、slogan、sellingPoint、commodityAreaList、customerCategory）
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+选择货品
+unitPriceAndPicList  
+brand?.id  
+customerCategory?.id
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+商品属性
+commodityAttributeList
+isUpdateAttribute
+getProductAttributeFormParamsByEdit（commodityAttributeList）
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+价格属性
+priceType
+minOrder
+unitPriceAndPicList
+getPriceAttributeFormParamsByEdit（unitId、unitName、minOrder、isMemberPrice、priceType）
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+商品图片
+isAllAttributePic
+unitPriceAndPicList
 
-## Learn More
+商品描述
+commodityRemark{}
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+物流 logistics
+其他 getOtherFormParamsByEdit（isInvoice、marks、packing、afterService） -->

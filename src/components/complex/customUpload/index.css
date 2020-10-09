@@ -1,0 +1,29 @@
+.customeUploadImage {
+  position: relative;
+  width: 104px;
+  height: 104px;
+}
+
+.customeUploadImage .deleteWrap {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 2px;
+}
+
+.customeUploadImage .deleteWrap .deleteBtn {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.customeUploadImage:hover .deleteWrap {
+  display: block;
+}
